@@ -525,13 +525,13 @@ a {
 .fix {
   transform: scale(0.9);
   position: fixed;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100vh; }
 
 button {
   cursor: pointer; }
 
 .index {
-  background-color: red;
   transition: 0.7s transform cubic-bezier(0.43, 0.01, 0, 0.99);
   position: absolute;
   top: 0;
@@ -626,7 +626,6 @@ button {
 
 .last-delivery {
   height: 100vh;
-  min-width: 100%;
   width: 50vw;
   top: 0;
   bottom: 0;

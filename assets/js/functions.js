@@ -23,6 +23,17 @@ $(document).ready(function(){
     $(".right-side").toggleClass("opennews");
   });
 });
+$(document).ready(function(){
+  $(".hamburger").click(function(){
+    $(window).scrollTop(position);
+  });
+});
+
+var position= $(window).scrollTop();
+
+//some things here
+
+
 // $(document).ready(function(){
 //   $(".hamburger").click(function(){
 //     $(".hamburger-menu").toggleClass("open");
