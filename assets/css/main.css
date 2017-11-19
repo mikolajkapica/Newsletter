@@ -531,6 +531,7 @@ button {
   cursor: pointer; }
 
 .index {
+  background-color: red;
   transition: 0.7s transform cubic-bezier(0.43, 0.01, 0, 0.99);
   position: absolute;
   top: 0;
@@ -546,11 +547,13 @@ button {
   position: relative; }
   .left-side h1 {
     font-size: 96px;
+    max-width: 90%;
     margin-bottom: 46px; }
   .left-side p {
     font-size: 22px;
     letter-spacing: 0.35px;
     line-height: 32px;
+    max-width: 90%;
     margin-bottom: 58px;
     width: 600px; }
   .left-side input {
@@ -623,6 +626,7 @@ button {
 
 .last-delivery {
   height: 100vh;
+  min-width: 100%;
   width: 50vw;
   top: 0;
   bottom: 0;
@@ -633,12 +637,10 @@ button {
   background-size: cover;
   background-position: center; }
   .last-delivery .text {
-    text-align: center;
     position: absolute;
     bottom: 82px;
-    left: 50%;
-    width: 382px;
-    transform: translate(-50%); }
+    text-align: center;
+    width: 100%; }
     .last-delivery .text h4 {
       font-size: 24px;
       font-style: uppercase; }
@@ -762,7 +764,7 @@ button {
     width: 40%; }
 
   .last-delivery {
-    width: 100%;
+    width: 100vw;
     position: relative;
     margin-top: 300px; }
     .last-delivery .text h3 {
@@ -796,5 +798,11 @@ button {
     margin-bottom: 100px; }
   .secondScreen .secondScreenContent .right-side .donate, .secondScreen .secondScreenContent .left-side .donate {
     margin-top: 0px; } }
+@media only screen and (max-width: 450px) {
+  .left-side h1 {
+    font-size: 55px; }
+
+  .secondScreen .secondScreenContent .left-side .menu-links {
+    font-size: 55px; } }
 
 /*# sourceMappingURL=main.css.map */
